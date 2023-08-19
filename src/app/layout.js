@@ -1,8 +1,6 @@
-'use client'
 import '../styles/globals.css'
 import { Inter } from 'next/font/google'
 import styles from '../styles/layout.module.css'
-import { useState } from 'react'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
@@ -11,7 +9,6 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }) {
-  const [devBlogText, setDevBlogText] = useState('DevBlog')
   return (
     <html lang="en">
       <body className={inter.className}>
@@ -20,10 +17,8 @@ export default function RootLayout({ children }) {
             thingy
           </div>
           <div className={styles.navright}>
-            <span onClick={() => {
-              setDevBlogText("Nice Try")
-            }}>
-              {devBlogText}
+            <span>
+              DevBlog
             </span>
             <span >
               <a href="https://www.linkedin.com/in/harry-thomas-ba618025a/">Contact Me</a>
