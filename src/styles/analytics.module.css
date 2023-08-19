@@ -1,0 +1,27 @@
+.analyticsContainer {
+  display: flex;
+  justify-content: space-evenly;
+}
+.analyticsContainer .analyticsSection {
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  width: 25%;
+  transition-duration: 1s;
+}
+.analyticsContainer .analyticsSection span {
+  display: inline-block;
+  font-size: 0.3em;
+}
+.analyticsContainer .analyticsBox {
+  background-color: rgb(64, 64, 146);
+  padding: 20px;
+  border-radius: 6px;
+  font-size: 0.6em;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.analyticsContainer.active .analyticsSection {
+  opacity: 1;
+}/*# sourceMappingURL=analytics.module.css.map */

@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+
+}
+
+body {
+  margin: 5px;
+  background-color: rgb(144, 168, 233);
+}
+
+::-webkit-scrollbar {
+  background: transparent;
+  width: 0;
+  height: 0;
+}

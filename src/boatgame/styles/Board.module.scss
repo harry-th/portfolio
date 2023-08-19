@@ -1,0 +1,75 @@
+.square {
+  width: 10%;
+  height: 10%;
+  background-color: blue;
+  display: inline-block;
+  font-size: 12px;
+  margin: 0px;
+  &:hover {
+    opacity: 0.7;
+  }
+  &.inactive {
+    pointer-events: none;
+  }
+  &.selectable {
+    background-color: rgb(226, 188, 117);
+  }
+  &.guess {
+    &::after {
+      content: "?";
+      color: black;
+    }
+    background-color: greenyellow;
+  }
+  &.nope {
+    background-color: rgb(134, 42, 42);
+  }
+  &.selectable.green {
+    background-color: green;
+  }
+  &.hit {
+    background-color: red;
+    pointer-events: none;
+  }
+  &.missed.green {
+    background-color: white;
+  }
+  &.protected {
+    background-color: orange;
+    pointer-events: none;
+  }
+  &.protected.missed {
+    background-color: rgb(203, 177, 128);
+  }
+  &.protected.mine {
+    background-color: orange;
+  }
+  &.missed {
+    background-color: white;
+    pointer-events: none;
+  }
+  &.mine {
+    background-color: black;
+  }
+  &.twoShot {
+    background-color: yellow;
+  }
+  &.hover {
+    background-color: black;
+  }
+}
+
+.board {
+  &:hover {
+    cursor: none;
+  }
+  width: 80%;
+  min-width: 180px;
+  min-width: 180px;
+  max-width: 300px;
+  border: 2px solid rgb(10, 10, 9);
+  border-radius: 4px;
+  &.yourturn {
+    box-shadow: 3px 3px 3px green;
+  }
+}

@@ -1,0 +1,99 @@
+.container {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.home {
+  position: relative;
+  width: 70vw;
+  height: 70vh;
+  min-height: 750px;
+  padding: 15px;
+  padding-top: 25px;
+  background-color: rgb(43, 43, 119);
+  border: 2px solid rgb(223, 183, 131);
+  border-radius: 4px;
+  color: rgb(223, 183, 131);
+  font-size: 40px;
+
+  .contentContainer {
+    height: 100%;
+    & > .active {
+      height: 100%;
+    }
+  }
+}
+.homeNavigation {
+  margin-top: 2px;
+  display: flex;
+  position: absolute;
+  top: 0%;
+  left: 65%;
+  button {
+    margin: 0px;
+    background-color: rgb(43, 43, 119);
+    color: rgb(223, 183, 131);
+    font-size: 12px;
+    &:hover {
+      cursor: pointer;
+      background-color: rgb(223, 183, 131);
+      color: rgb(43, 43, 119);
+    }
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .home {
+    font-size: 35px;
+  }
+  .homeNavigation {
+    left: 50%;
+    button {
+      font-size: 10px;
+      padding-left: 2px;
+      padding-right: 2px;
+    }
+  }
+}
+@media only screen and (max-width: 800px) {
+  .home {
+    font-size: 25px;
+  }
+  .homeNavigation {
+    button {
+      font-size: 10px;
+      padding-left: 2px;
+      padding-right: 2px;
+    }
+    left: 45%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .home {
+    font-size: 20px;
+  }
+  .homeNavigation {
+    button {
+      font-size: 10px;
+      padding-left: 2px;
+      padding-right: 2px;
+    }
+    left: 40%;
+  }
+}
+
+@media only screen and (max-height: 770px) {
+  .home {
+    font-size: 25px;
+  }
+}
+@media only screen and (max-height: 560px) {
+  .home {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-height: 460px) {
+  .home {
+    font-size: 18px;
+  }
+}

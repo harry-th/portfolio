@@ -1,0 +1,100 @@
+.contentElement {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  div {
+    padding: 5px;
+    margin: 5px;
+  }
+  .title {
+    border-bottom: 1px solid rgb(223, 183, 131);
+    letter-spacing: 2px;
+    margin: 5px;
+  }
+
+  .body {
+    &.small {
+      font-size: 0.35em;
+    }
+    font-size: 0.5em;
+    letter-spacing: 2px;
+
+    p {
+      margin: 5px;
+      margin-top: 12px;
+      &:first-child {
+        text-indent: 15px;
+      }
+    }
+  }
+  .footer {
+    &.small {
+      font-size: 0.3em;
+    }
+    margin-top: auto;
+    font-size: 0.4em;
+    border-top: 1px solid rgb(223, 183, 131);
+    padding-bottom: 15px;
+    max-height: 30px;
+    // align-self: flex-end;
+  }
+}
+.contentElement.active {
+  .fade-in {
+    transition: opacity 1s;
+    opacity: 1;
+  }
+  .slide-in {
+    transition: 1s;
+    position: relative;
+    left: 0px;
+    top: 0px;
+  }
+}
+.fade-in {
+  opacity: 0;
+}
+.slide-in-left {
+  position: relative;
+  left: -15px;
+}
+.slide-in-right {
+  position: relative;
+  left: 15px;
+}
+.slide-in-top {
+  position: relative;
+  top: 15px;
+}
+.slide-in-bottom {
+  position: relative;
+  top: -15px;
+}
+
+span.untypewritten {
+  opacity: 0;
+}
+span.typewritten.typewriting {
+  opacity: 1;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+}
+.typewriting {
+  position: relative;
+  transition-duration: 1s;
+  transition-property: opacity, top, left;
+}
+.typewriting.up {
+  top: 25px;
+}
+.typewriting.down {
+  top: -25px;
+}
+.typewriting.right {
+  left: -25px;
+}
+.typewriting.left {
+  left: 25px;
+}

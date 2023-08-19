@@ -1,0 +1,37 @@
+$transition-delay-increment: 0.1s;
+$transition-delay-default: 6s;
+
+.analyticsContainer {
+  display: flex;
+  justify-content: space-evenly;
+
+  .analyticsSection {
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    width: 25%;
+
+    span {
+      display: inline-block;
+      font-size: 0.3em;
+    }
+    transition-duration: 1s;
+    // @for $i from 1 through 4 {
+    //   &:nth-child(#{$i}) {
+    //     transition-delay: $transition-delay-default +
+    //       ($i * $transition-delay-increment);
+    //     transition-property: opacity;
+    //   }
+    // }
+  }
+  .analyticsBox {
+    background-color: rgb(64, 64, 146);
+    padding: 20px;
+    border-radius: 6px;
+    font-size: 0.6em;
+    width: fit-content;
+  }
+}
+.analyticsContainer.active .analyticsSection {
+  opacity: 1;
+}

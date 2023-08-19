@@ -1,0 +1,73 @@
+.logcontainer {
+  background-color: rgb(207, 175, 107);
+  display: flex;
+  flex-direction: column-reverse;
+  overflow: scroll;
+  border: 1px solid rgb(78, 41, 10);
+  border-bottom: 2px;
+  font-size: 14px;
+  color: black;
+  max-width: 300px;
+  height: 90px;
+}
+.logcontainer p {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 1000;
+  text-align: left;
+  width: 100%;
+  margin: 6px;
+  margin-bottom: 0px;
+}
+
+.usercontainer {
+  max-width: 300px;
+  background-color: rgb(202, 158, 77);
+  border: 1px solid rgb(78, 41, 10);
+  border-top: 0px;
+  font-size: 14px;
+  color: black;
+}
+.usercontainer .turncontainer {
+  background-color: rgb(207, 175, 107);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgb(78, 41, 10);
+  border-left: 0px;
+  border-right: 0px;
+}
+.usercontainer .turncontainer .turnIndicator {
+  margin: 5px;
+  font-size: 0px;
+  width: 30px;
+  height: 30px;
+  border: 2px solid rgb(78, 41, 10);
+}
+.usercontainer .turncontainer .turnIndicatorTrue {
+  color: green;
+  background-color: green;
+}
+.usercontainer .turncontainer .turnIndicatorFalse {
+  color: red;
+  background-color: red;
+}
+.usercontainer .turncontainer .freeshotinformation {
+  margin: 5px;
+}
+.usercontainer .turncontainer .freeshotinformation p {
+  width: 100%;
+  float: left;
+  margin: 0px;
+}
+.usercontainer .charcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+}
+.usercontainer .charcontainer button {
+  margin: 5px;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  height: 70px;
+}/*# sourceMappingURL=Dashboard.module.css.map */
