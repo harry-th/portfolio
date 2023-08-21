@@ -3,8 +3,9 @@ const searchConsole = require('@googleapis/searchconsole');
 const { format, subWeeks } = require('date-fns');
 
 export async function GET(request) {
+    console.log(JSON.parse(process.env.keyfile))
     const auth = await searchConsole.auth.getClient({
-        keyFile: './portfolio-project-394716-76ed533a3f5e.json', // Update with the correct path to your JSON key file
+        credentials: JSON.parse(process.env.keyfile), // Update with the correct path to your JSON key file
         scopes: ['https://www.googleapis.com/auth/webmasters.readonly'],
     });
 
