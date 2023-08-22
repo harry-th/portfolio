@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <nav className={styles.navbar}>
           <div className={styles.navleft}>
-            thingy
+            harry thomas
           </div>
           <div className={styles.navright}>
             <span>

@@ -19,7 +19,7 @@ const PipeTobaccoSearch = {
             transitionDelay: ["0.3s", "1s", '0s'],
             value: ["This is my first hosted operational fullstack project. This is my first hosted operational fullstack project.",
                 "Its a database and search functionality for pipe tobacco.",
-                "Yes I smoke a pipe."]
+                "I smoke a pipe."]
         },
         {
             type: ["body"],
@@ -37,9 +37,9 @@ const PipeTobaccoSearch = {
         },
         {
             type: ["body"],
+            animations: ["slide-in", "slide-in-right", "fade-in"],
             value: "This project is also practice and exposure to SEO and Google search console. Above Is an integration with the Google Search Console Api which should be querying and updating each day with nextjs' api routes system.",
-            typeIn: true,
-            typeDelay: "8000",
+            transitionDelay: ["9.5s"],
 
         },
         {
@@ -48,7 +48,7 @@ const PipeTobaccoSearch = {
             height: "20%",
             typeIn: true,
             typeDirection: "down",
-            typeDelay: "19000",
+            typeDelay: "11000",
             value: "See? you can click the middle button now to view the site!"
         },
     ]
