@@ -17,7 +17,7 @@ const PipeTobaccoSearch = {
             typeDirection: ["", "", "down"],
             typeDelay: ["", "", "3000"],
             transitionDelay: ["0.3s", "1s", '0s'],
-            value: ["This is my first hosted operational fullstack project. This is my first hosted operational fullstack project.",
+            value: ["This is a hosted fullstack project using .NET 6 and EF CORE with sql database.",
                 "Its a database and search functionality for pipe tobacco.",
                 "I smoke a pipe."]
         },
