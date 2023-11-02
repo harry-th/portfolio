@@ -43,8 +43,14 @@
   color: rgb(43, 43, 119);
 }
 
+@media only screen and (max-width: 1600px) {
+  .home {
+    width: 75vw;
+  }
+}
 @media only screen and (max-width: 1200px) {
   .home {
+    width: 75vw;
     font-size: 35px;
   }
   .homeNavigation {
@@ -59,6 +65,7 @@
 }
 @media only screen and (max-width: 800px) {
   .home {
+    width: 80vw;
     font-size: 25px;
   }
   .homeNavigation {
@@ -72,6 +79,7 @@
 }
 @media only screen and (max-width: 600px) {
   .home {
+    width: 90vw;
     font-size: 20px;
   }
   .homeNavigation {

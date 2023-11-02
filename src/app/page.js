@@ -65,22 +65,6 @@ export default function Home() {
               ` next: ${Object.keys(content)[menuIndex + 1] || "nothing..."}`
             }
           </button>
-          {/* <button onClick={() => {
-            setContentKey("About")
-          }}
-          >
-            About
-          </button>
-          <button onClick={() => {
-            setContentKey("boatgame")
-          }}>
-            boatgame
-          </button>
-          <button onClick={() => {
-            setContentKey("PipeTobaccoSearch")
-          }}>
-            PipeTobaccoSearch
-          </button> */}
         </div>
         <div className={styles.contentContainer}>
 
