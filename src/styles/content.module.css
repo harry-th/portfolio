@@ -104,4 +104,11 @@ span.typewritten.typewriting {
 
 .typewriting.left {
   left: 25px;
+}
+
+@media only screen and (max-width: 600px) {
+  .contentElement .body p {
+    margin: 2px;
+    margin-top: 8px;
+  }
 }/*# sourceMappingURL=content.module.css.map */
