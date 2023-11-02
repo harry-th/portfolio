@@ -118,7 +118,7 @@
 }
 @media only screen and (max-width: 550px) {
   .homeNavigation {
-    left: 40%;
+    left: 32%;
   }
   .homeNavigation button {
     font-size: 8px;
