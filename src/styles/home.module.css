@@ -29,13 +29,15 @@
   display: flex;
   position: absolute;
   top: 0%;
-  left: 65%;
+  left: 45%;
+  width: 475px;
 }
 .homeNavigation button {
+  font-size: 12px;
+  width: 33%;
   margin: 0px;
   background-color: rgb(43, 43, 119);
   color: rgb(223, 183, 131);
-  font-size: 12px;
 }
 .homeNavigation button:hover {
   cursor: pointer;
@@ -78,7 +80,8 @@
   }
   .homeNavigation {
     font-size: 10px;
-    left: 50%;
+    left: 35%;
+    width: 400px;
   }
   .homeNavigation button {
     font-size: 10px;
@@ -92,7 +95,8 @@
     font-size: 25px;
   }
   .homeNavigation {
-    left: 45%;
+    width: 355px;
+    left: 25%;
   }
   .homeNavigation button {
     font-size: 10px;
@@ -108,17 +112,18 @@
     font-size: 22px;
   }
   .homeNavigation {
-    left: 40%;
+    width: 345px;
+    left: 25%;
   }
   .homeNavigation button {
-    font-size: 10px;
     padding-left: 2px;
     padding-right: 2px;
   }
 }
 @media only screen and (max-width: 550px) {
   .homeNavigation {
-    left: 32%;
+    width: 300px;
+    left: 25%;
   }
   .homeNavigation button {
     font-size: 8px;
