@@ -5,7 +5,7 @@ const formatGSCDATA = (data) => {
 }
 const Analytics = ({ api, transitionDelay }) => {
     const [active, setActive] = useState(false)
-    const [data, SetData] = useState()
+    const [data, setData] = useState()
     useEffect(() => {
         fetch(`/api/${api}`, {
             next: {
@@ -18,7 +18,7 @@ const Analytics = ({ api, transitionDelay }) => {
                 let data = response.rows[0]
                 data.position = Math.round(data.position * 100) / 100
                 data.ctr = (Math.round(data.ctr * 10000) / 100).toString() + "%"
-                SetData(data)
+                setData(data)
             })
     }, [api])
     useEffect(() => {
