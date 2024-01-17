@@ -2,6 +2,8 @@
 const searchConsole = require('@googleapis/searchconsole');
 const { format, subWeeks } = require('date-fns');
 
+export const revalidate = true;
+
 export async function GET(request) {
     let credentials = JSON.parse(process.env.keyfile)
     const auth = await searchConsole.auth.getClient({
